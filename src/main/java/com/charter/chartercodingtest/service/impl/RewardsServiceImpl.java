@@ -42,7 +42,7 @@ public class RewardsServiceImpl implements RewardsService {
             points += (amount - 50);
         } else {
             points += 50;
-            points += (amount % 100) * 2;
+            points += (amount - 100) * 2;
         }
         return points;
     }
